@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" fill="none">
+  <defs>
+    <linearGradient id="chocTeque" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="50%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="chocNutella" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#451A03" />
+      <stop offset="100%" stop-color="#291002" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="160" cy="110" r="100" fill="#FEF9C3" opacity="0.6" />
+
+  <!-- Plate -->
+  <ellipse cx="160" cy="135" rx="135" ry="46" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2" />
+
+  <!-- Tequeño Sweet Pastry -->
+  <g transform="translate(65, 80) rotate(-5)">
+    <rect x="0" y="0" width="180" height="38" rx="19" fill="url(#chocTeque)" stroke="#78350F" stroke-width="2" />
+    <!-- Spirals -->
+    <path d="M 30 0 Q 42 19 54 38" stroke="#78350F" stroke-width="2.5" fill="none" />
+    <path d="M 70 0 Q 82 19 94 38" stroke="#78350F" stroke-width="2.5" fill="none" />
+    <path d="M 110 0 Q 122 19 134 38" stroke="#78350F" stroke-width="2.5" fill="none" />
+    <path d="M 150 0 Q 158 19 166 38" stroke="#78350F" stroke-width="2" fill="none" />
+
+    <!-- Nutella Chocolate oozing out -->
+    <ellipse cx="178" cy="19" rx="10" ry="16" fill="url(#chocNutella)" />
+    <path d="M 180 18 C 195 24, 192 36, 185 38 C 180 34, 180 26, 178 22 Z" fill="#3B1502" />
+    <circle cx="188" cy="24" r="2" fill="#FFFFFF" opacity="0.6" />
+
+    <!-- Powdered sugar sprinkles -->
+    <circle cx="35" cy="12" r="1.5" fill="#FFFFFF" />
+    <circle cx="65" cy="22" r="1.5" fill="#FFFFFF" />
+    <circle cx="95" cy="14" r="1.5" fill="#FFFFFF" />
+    <circle cx="130" cy="26" r="1.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- Fresh Banana Slices -->
+  <g transform="translate(50, 115)">
+    <ellipse cx="25" cy="18" rx="18" ry="12" fill="#FEF08A" stroke="#EAB308" stroke-width="1.5" />
+    <circle cx="25" cy="18" r="4" fill="#CA8A04" opacity="0.4" />
+  </g>
+  <g transform="translate(85, 128)">
+    <ellipse cx="25" cy="18" rx="18" ry="12" fill="#FEF08A" stroke="#EAB308" stroke-width="1.5" />
+    <circle cx="25" cy="18" r="4" fill="#CA8A04" opacity="0.4" />
+  </g>
+
+  <!-- Banana Sticker Badge -->
+  <g transform="translate(230, 25)">
+    <rect x="0" y="0" width="75" height="42" rx="12" fill="#FFE033" stroke="#B45309" stroke-width="2" />
+    <text x="37" y="24" font-family="'Fredoka', 'Poppins', sans-serif" font-weight="900" font-size="13" fill="#1E3A8A" text-anchor="middle">BANANA!</text>
+    <text x="37" y="36" font-family="sans-serif" font-weight="700" font-size="9" fill="#78350F" text-anchor="middle">&amp; NUTELLA</text>
+  </g>
+</svg>

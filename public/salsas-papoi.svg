@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" fill="none">
+  <defs>
+    <linearGradient id="sauceGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FEF9C3" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FEF08A" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="160" cy="110" r="100" fill="#FEFCE8" opacity="0.5" />
+
+  <!-- Platter -->
+  <ellipse cx="160" cy="145" rx="140" ry="45" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2" />
+
+  <!-- Cup 1: Salsa de Ajo Minion (Left) -->
+  <g transform="translate(45, 80)">
+    <path d="M 10 25 L 18 55 C 18 60, 52 60, 52 55 L 60 25 Z" fill="#2563EB" stroke="#1E3A8A" stroke-width="1.5" />
+    <ellipse cx="35" cy="25" rx="25" ry="11" fill="#FEFCE8" stroke="#E2E8F0" stroke-width="1.5" />
+    <circle cx="30" cy="23" r="2" fill="#16A34A" />
+    <circle cx="38" cy="26" r="1.5" fill="#15803D" />
+    <text x="35" y="75" font-family="sans-serif" font-weight="800" font-size="9" fill="#1E3A8A" text-anchor="middle">AJO PAPOI</text>
+  </g>
+
+  <!-- Cup 2: Salsa Tártara Gru (Center, slightly larger) -->
+  <g transform="translate(120, 65)">
+    <path d="M 10 30 L 20 68 C 20 74, 60 74, 60 68 L 70 30 Z" fill="#FACC15" stroke="#CA8A04" stroke-width="1.5" />
+    <ellipse cx="40" cy="30" rx="30" ry="13" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    <circle cx="34" cy="28" r="2.5" fill="#16A34A" />
+    <circle cx="46" cy="31" r="2" fill="#EF4444" />
+    <circle cx="40" cy="33" r="1.5" fill="#16A34A" />
+    <text x="40" y="90" font-family="sans-serif" font-weight="800" font-size="10" fill="#78350F" text-anchor="middle">TÁRTARA GRU</text>
+  </g>
+
+  <!-- Cup 3: Miel Mostaza Minion (Right) -->
+  <g transform="translate(205, 80)">
+    <path d="M 10 25 L 18 55 C 18 60, 52 60, 52 55 L 60 25 Z" fill="#EA580C" stroke="#9A3412" stroke-width="1.5" />
+    <ellipse cx="35" cy="25" rx="25" ry="11" fill="#FDE047" stroke="#EAB308" stroke-width="1.5" />
+    <circle cx="35" cy="25" r="3" fill="#F59E0B" />
+    <text x="35" y="75" font-family="sans-serif" font-weight="800" font-size="9" fill="#9A3412" text-anchor="middle">MIEL MOSTAZA</text>
+  </g>
+
+  <!-- Squeeze bottle in background -->
+  <g transform="translate(265, 30) rotate(15)">
+    <rect x="0" y="8" width="18" height="42" rx="4" fill="#FACC15" stroke="#CA8A04" stroke-width="1.5" />
+    <polygon points="5,8 13,8 9,0" fill="#EF4444" />
+    <circle cx="9" cy="25" r="4" fill="#1E3A8A" />
+  </g>
+</svg>

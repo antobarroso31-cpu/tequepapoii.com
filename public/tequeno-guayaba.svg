@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" fill="none">
+  <defs>
+    <linearGradient id="guayabaFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#9F1239" />
+    </linearGradient>
+    <linearGradient id="tqGoldG" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="50%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="160" cy="110" r="100" fill="#FFE4E6" opacity="0.4" />
+
+  <!-- Wooden Platter -->
+  <ellipse cx="160" cy="135" rx="135" ry="46" fill="#FEF3C7" stroke="#D97706" stroke-width="2" />
+
+  <!-- Tequeño Body with Guava and Cheese Oozing -->
+  <g transform="translate(65, 80) rotate(-6)">
+    <rect x="0" y="0" width="180" height="38" rx="19" fill="url(#tqGoldG)" stroke="#78350F" stroke-width="2" />
+    <!-- Spirals -->
+    <path d="M 30 0 Q 42 19 54 38" stroke="#78350F" stroke-width="2.5" fill="none" />
+    <path d="M 70 0 Q 82 19 94 38" stroke="#78350F" stroke-width="2.5" fill="none" />
+    <path d="M 110 0 Q 122 19 134 38" stroke="#78350F" stroke-width="2.5" fill="none" />
+    <path d="M 150 0 Q 158 19 166 38" stroke="#78350F" stroke-width="2" fill="none" />
+
+    <!-- Guava & Cheese Marbled Melting Tip -->
+    <ellipse cx="178" cy="19" rx="10" ry="16" fill="url(#guayabaFill)" />
+    <!-- Melted White Cheese Strand blended with Guava -->
+    <path d="M 172 12 Q 185 22 176 30" stroke="#FEF9C3" stroke-width="4" fill="none" stroke-linecap="round" />
+    <path d="M 180 16 C 196 22, 194 34, 185 36" fill="url(#guayabaFill)" />
+  </g>
+
+  <!-- Sweet Guava Cube accents -->
+  <g transform="translate(60, 125)">
+    <polygon points="10,0 24,5 20,20 6,15" fill="#E11D48" stroke="#9F1239" stroke-width="1.5" />
+    <polygon points="26,8 38,12 34,25 22,21" fill="#BE123C" stroke="#881337" stroke-width="1.5" />
+  </g>
+
+  <!-- Sweet & Salty Badge -->
+  <g transform="translate(210, 25)">
+    <rect x="0" y="0" width="95" height="42" rx="12" fill="#E11D48" stroke="#FFFFFF" stroke-width="2" />
+    <text x="47" y="22" font-family="'Fredoka', 'Poppins', sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">GUAYABA</text>
+    <text x="47" y="35" font-family="sans-serif" font-weight="800" font-size="9" fill="#FEF08A" text-anchor="middle">&amp; QUESO PAPOI</text>
+  </g>
+</svg>

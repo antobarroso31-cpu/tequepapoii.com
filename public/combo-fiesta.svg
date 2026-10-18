@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" fill="none">
+  <defs>
+    <linearGradient id="boxBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#172554" />
+    </linearGradient>
+    <linearGradient id="boxYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="160" cy="110" r="100" fill="#DBEAFE" opacity="0.4" />
+
+  <!-- Shadow -->
+  <ellipse cx="160" cy="180" rx="110" ry="25" fill="#0F172A" opacity="0.2" />
+
+  <!-- Party Box (Isometric Delivery Box) -->
+  <!-- Box Base -->
+  <polygon points="50,110 160,150 270,110 160,70" fill="url(#boxYellow)" stroke="#B45309" stroke-width="2" />
+  <polygon points="50,110 160,150 160,180 50,140" fill="#EAB308" stroke="#B45309" stroke-width="2" />
+  <polygon points="160,150 270,110 270,140 160,180" fill="#CA8A04" stroke="#B45309" stroke-width="2" />
+
+  <!-- Front Box Logo Ribbon -->
+  <path d="M 70 125 L 140 150" stroke="#1E3A8A" stroke-width="8" stroke-linecap="round" />
+  <text x="105" y="141" font-family="'Fredoka', sans-serif" font-weight="900" font-size="9" fill="#FFFFFF" text-anchor="middle">PAPOI BOX</text>
+
+  <!-- Tequeños Overflowing inside the Box -->
+  <g transform="translate(100, 50)">
+    <!-- Tequeño 1 -->
+    <rect x="0" y="20" width="85" height="20" rx="10" fill="#F59E0B" stroke="#92400E" stroke-width="1.5" transform="rotate(-20 40 30)" />
+    <!-- Tequeño 2 -->
+    <rect x="30" y="15" width="85" height="20" rx="10" fill="#FBBF24" stroke="#92400E" stroke-width="1.5" transform="rotate(15 70 25)" />
+    <!-- Tequeño 3 -->
+    <rect x="15" y="0" width="85" height="20" rx="10" fill="#F59E0B" stroke="#92400E" stroke-width="1.5" transform="rotate(-5 55 10)" />
+    <!-- Tequeño 4 -->
+    <rect x="10" y="30" width="85" height="20" rx="10" fill="#FBBF24" stroke="#92400E" stroke-width="1.5" transform="rotate(5 50 40)" />
+  </g>
+
+  <!-- Dipping Cups on the side -->
+  <ellipse cx="65" cy="95" rx="14" ry="7" fill="#1E3A8A" />
+  <ellipse cx="65" cy="93" rx="12" ry="5" fill="#FEFCE8" />
+
+  <ellipse cx="255" cy="95" rx="14" ry="7" fill="#1E3A8A" />
+  <ellipse cx="255" cy="93" rx="12" ry="5" fill="#EF4444" />
+
+  <!-- Confetti and Stars -->
+  <circle cx="70" cy="40" r="3" fill="#EF4444" />
+  <circle cx="250" cy="45" r="4" fill="#3B82F6" />
+  <polygon points="160,15 163,22 170,22 165,27 167,34 160,30 153,34 155,27 150,22 157,22" fill="#EAB308" />
+
+  <!-- Badge 50 UNIDADES -->
+  <g transform="translate(205, 15)">
+    <rect x="0" y="0" width="95" height="42" rx="12" fill="#1E3A8A" stroke="#FACC15" stroke-width="2" />
+    <text x="47" y="22" font-family="'Fredoka', sans-serif" font-weight="900" font-size="13" fill="#FACC15" text-anchor="middle">50 PIEZAS</text>
+    <text x="47" y="35" font-family="sans-serif" font-weight="800" font-size="9" fill="#FFFFFF" text-anchor="middle">SUPER COMBO</text>
+  </g>
+</svg>

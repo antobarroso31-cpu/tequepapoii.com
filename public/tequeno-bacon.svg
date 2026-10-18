@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" fill="none">
+  <defs>
+    <linearGradient id="cheddarFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+    <linearGradient id="tqGoldB" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="50%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="160" cy="110" r="100" fill="#FFEDD5" opacity="0.4" />
+
+  <!-- Platter -->
+  <ellipse cx="160" cy="135" rx="135" ry="46" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2" />
+
+  <!-- Tequeño Body with Bacon & Cheddar -->
+  <g transform="translate(65, 80) rotate(-6)">
+    <rect x="0" y="0" width="180" height="38" rx="19" fill="url(#tqGoldB)" stroke="#78350F" stroke-width="2" />
+    <!-- Spirals -->
+    <path d="M 30 0 Q 42 19 54 38" stroke="#78350F" stroke-width="2.5" fill="none" />
+    <path d="M 70 0 Q 82 19 94 38" stroke="#78350F" stroke-width="2.5" fill="none" />
+    <path d="M 110 0 Q 122 19 134 38" stroke="#78350F" stroke-width="2.5" fill="none" />
+    <path d="M 150 0 Q 158 19 166 38" stroke="#78350F" stroke-width="2" fill="none" />
+
+    <!-- Cheddar Oozing Tip -->
+    <ellipse cx="178" cy="19" rx="10" ry="16" fill="url(#cheddarFill)" />
+    <path d="M 180 18 C 196 22, 194 34, 185 36" fill="#EA580C" />
+
+    <!-- Crispy Bacon Bits embedded on crust -->
+    <rect x="45" y="14" width="8" height="6" rx="1" fill="#7F1D1D" />
+    <rect x="75" y="24" width="7" height="5" rx="1" fill="#991B1B" />
+    <rect x="115" y="16" width="9" height="5" rx="1" fill="#7F1D1D" />
+    <rect x="140" y="22" width="7" height="6" rx="1" fill="#991B1B" />
+  </g>
+
+  <!-- Crispy Bacon Strip beside it -->
+  <path d="M 50 145 Q 65 135 80 145 T 110 145 T 140 145" stroke="#991B1B" stroke-width="7" fill="none" stroke-linecap="round" />
+  <path d="M 50 145 Q 65 135 80 145 T 110 145 T 140 145" stroke="#F87171" stroke-width="2" fill="none" stroke-linecap="round" />
+
+  <!-- Badge -->
+  <g transform="translate(210, 25)">
+    <rect x="0" y="0" width="95" height="42" rx="12" fill="#EA580C" stroke="#FFFFFF" stroke-width="2" />
+    <text x="47" y="22" font-family="'Fredoka', 'Poppins', sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">BACON</text>
+    <text x="47" y="35" font-family="sans-serif" font-weight="800" font-size="9" fill="#FEF08A" text-anchor="middle">&amp; CHEDDAR</text>
+  </g>
+</svg>

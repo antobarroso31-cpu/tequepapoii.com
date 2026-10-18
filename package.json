@@ -1,0 +1,17 @@
+{
+  "name": "tequenos-el-papoi",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sitio web oficial de Tequeños El Papoi - El sabor más crujiente y divertido con tematica de Minions. Propietarios: Antony Contreras, Diego Tigrera, Richard Rodriguez.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}

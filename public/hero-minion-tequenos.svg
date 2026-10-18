@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <defs>
+    <radialGradient id="sunburst" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#FDE047" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FEF08A" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cheeseGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF9C3" />
+      <stop offset="50%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="crustGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B45309" />
+      <stop offset="30%" stop-color="#F59E0B" />
+      <stop offset="70%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <filter id="bigGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Warm Glow -->
+  <circle cx="300" cy="225" r="210" fill="url(#sunburst)" />
+
+  <!-- Floating Cheese Sparks & Banana confetti -->
+  <g opacity="0.85">
+    <!-- Banana icon 1 -->
+    <path d="M 80 100 Q 110 85 130 115 Q 115 110 80 100 Z" fill="#FACC15" stroke="#CA8A04" stroke-width="2" />
+    <!-- Banana icon 2 -->
+    <path d="M 480 90 Q 510 75 530 105 Q 515 100 480 90 Z" fill="#FACC15" stroke="#CA8A04" stroke-width="2" transform="rotate(30 500 100)" />
+    <!-- Cheese stars -->
+    <polygon points="180,60 185,75 200,75 187,85 192,100 180,90 168,100 173,85 160,75 175,75" fill="#F59E0B" />
+    <polygon points="420,70 424,80 435,80 426,87 430,98 420,91 410,98 414,87 405,80 416,80" fill="#FACC15" />
+    <polygon points="520,280 524,290 535,290 526,297 530,308 520,301 510,308 514,297 505,290 516,290" fill="#F59E0B" />
+    <polygon points="90,320 94,330 105,330 96,337 100,348 90,341 80,348 84,337 75,330 86,330" fill="#FACC15" />
+  </g>
+
+  <!-- Left Minion Mascot (Cheering & Reaching) -->
+  <g transform="translate(60, 180) rotate(-10)">
+    <rect x="20" y="40" width="75" height="110" rx="37" fill="#FACC15" stroke="#CA8A04" stroke-width="3" />
+    <!-- Goggle Strap -->
+    <rect x="20" y="65" width="75" height="10" fill="#1F2937" />
+    <!-- One Goggle Eye -->
+    <circle cx="58" cy="70" r="18" fill="#9CA3AF" stroke="#374151" stroke-width="3" />
+    <circle cx="58" cy="70" r="13" fill="#FFFFFF" />
+    <circle cx="58" cy="70" r="7" fill="#78350F" />
+    <circle cx="58" cy="70" r="3.5" fill="#0F172A" />
+    <circle cx="60" cy="68" r="1.5" fill="#FFFFFF" />
+    <!-- Smile -->
+    <path d="M 44 100 Q 58 116 72 100" stroke="#78350F" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <!-- Overalls -->
+    <path d="M 20 120 L 20 150 C 20 160, 30 165, 57 165 C 85 165, 95 160, 95 150 L 95 120 Z" fill="#2563EB" />
+    <rect x="38" y="112" width="38" height="30" rx="3" fill="#2563EB" />
+    <!-- Hand pointing up to cheese -->
+    <path d="M 85 110 Q 110 80 120 70" stroke="#FACC15" stroke-width="12" stroke-linecap="round" />
+    <circle cx="122" cy="68" r="7" fill="#1F2937" />
+  </g>
+
+  <!-- Right Minion Mascot (Hungry & Drooling) -->
+  <g transform="translate(420, 190) rotate(8)">
+    <rect x="25" y="40" width="75" height="110" rx="37" fill="#FACC15" stroke="#CA8A04" stroke-width="3" />
+    <!-- Goggle Strap -->
+    <rect x="25" y="65" width="75" height="10" fill="#1F2937" />
+    <!-- Double Goggle Eyes -->
+    <circle cx="48" cy="70" r="14" fill="#9CA3AF" stroke="#374151" stroke-width="2.5" />
+    <circle cx="48" cy="70" r="10" fill="#FFFFFF" />
+    <circle cx="48" cy="70" r="5" fill="#78350F" />
+    <circle cx="76" cy="70" r="14" fill="#9CA3AF" stroke="#374151" stroke-width="2.5" />
+    <circle cx="76" cy="70" r="10" fill="#FFFFFF" />
+    <circle cx="76" cy="70" r="5" fill="#78350F" />
+    <!-- Huge Excited O-Mouth -->
+    <ellipse cx="62" cy="106" rx="14" ry="16" fill="#7F1D1D" stroke="#78350F" stroke-width="2" />
+    <ellipse cx="62" cy="114" rx="8" ry="6" fill="#F43F5E" />
+    <!-- Overalls -->
+    <path d="M 25 120 L 25 150 C 25 160, 35 165, 62 165 C 90 165, 100 160, 100 150 L 100 120 Z" fill="#2563EB" />
+    <rect x="44" y="112" width="38" height="30" rx="3" fill="#2563EB" />
+  </g>
+
+  <!-- THE HERO CHEESE STRETCH TEQUEÑO! -->
+  <g transform="translate(140, 130)">
+    <!-- Left Tequeño Piece -->
+    <g transform="rotate(-18 50 80)">
+      <!-- Crispy spiral pastry cylinder -->
+      <rect x="0" y="60" width="130" height="46" rx="23" fill="url(#crustGlow)" stroke="#78350F" stroke-width="3" />
+      <path d="M 25 60 Q 35 83 45 106" stroke="#92400E" stroke-width="3.5" fill="none" stroke-linecap="round" />
+      <path d="M 55 60 Q 65 83 75 106" stroke="#92400E" stroke-width="3.5" fill="none" stroke-linecap="round" />
+      <path d="M 85 60 Q 95 83 105 106" stroke="#92400E" stroke-width="3.5" fill="none" stroke-linecap="round" />
+      <path d="M 115 62 Q 120 83 125 104" stroke="#92400E" stroke-width="3" fill="none" stroke-linecap="round" />
+      <ellipse cx="128" cy="83" rx="10" ry="21" fill="#FEF08A" stroke="#EAB308" stroke-width="2" />
+    </g>
+
+    <!-- Right Tequeño Piece -->
+    <g transform="translate(190, 0) rotate(16 120 80)">
+      <rect x="70" y="60" width="130" height="46" rx="23" fill="url(#crustGlow)" stroke="#78350F" stroke-width="3" />
+      <path d="M 95 60 Q 105 83 115 106" stroke="#92400E" stroke-width="3.5" fill="none" stroke-linecap="round" />
+      <path d="M 125 60 Q 135 83 145 106" stroke="#92400E" stroke-width="3.5" fill="none" stroke-linecap="round" />
+      <path d="M 155 60 Q 165 83 175 106" stroke="#92400E" stroke-width="3.5" fill="none" stroke-linecap="round" />
+      <ellipse cx="72" cy="83" rx="10" ry="21" fill="#FEF08A" stroke="#EAB308" stroke-width="2" />
+    </g>
+
+    <!-- EPIC MELTED CHEESE STRETCH (Bridge) -->
+    <!-- Outer Cheese Pull -->
+    <path d="M 110 52 C 160 30, 200 45, 270 70 C 210 95, 170 85, 110 52 Z" fill="url(#cheeseGlow)" stroke="#F59E0B" stroke-width="2" />
+    <!-- Secondary stretchy strands -->
+    <path d="M 115 68 C 170 80, 200 120, 265 92" stroke="#FEF08A" stroke-width="7" stroke-linecap="round" fill="none" />
+    <path d="M 115 68 C 170 80, 200 120, 265 92" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" fill="none" />
+    <!-- Dripping cheese droplet -->
+    <path d="M 185 96 C 182 120, 192 120, 189 96 Z" fill="#FDE047" stroke="#F59E0B" stroke-width="1.5" />
+    <!-- Cheese stretch ribbon -->
+    <path d="M 120 48 Q 190 25 260 62" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8" />
+  </g>
+
+  <!-- Speech Bubble: "¡PAPOI!" -->
+  <g transform="translate(380, 25)">
+    <rect x="0" y="0" width="130" height="52" rx="16" fill="#FFFFFF" stroke="#1E3A8A" stroke-width="3" />
+    <polygon points="30,50 20,68 45,50" fill="#FFFFFF" stroke="#1E3A8A" stroke-width="3" />
+    <polygon points="28,49 22,64 43,49" fill="#FFFFFF" />
+    <text x="65" y="36" font-family="'Fredoka', 'Poppins', sans-serif" font-weight="900" font-size="28" fill="#1E3A8A" text-anchor="middle">
+      ¡PAPOI!
+    </text>
+  </g>
+
+  <!-- Garlic Dip Bowl -->
+  <g transform="translate(255, 310)">
+    <!-- Plate base -->
+    <ellipse cx="45" cy="45" rx="45" ry="18" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2" />
+    <ellipse cx="45" cy="40" rx="38" ry="14" fill="#1E3A8A" />
+    <!-- Creamy garlic sauce -->
+    <ellipse cx="45" cy="38" rx="34" ry="11" fill="#FEFCE8" />
+    <!-- Parsley sprinkles -->
+    <circle cx="38" cy="36" r="2" fill="#16A34A" />
+    <circle cx="52" cy="37" r="1.5" fill="#16A34A" />
+    <circle cx="44" cy="40" r="1.5" fill="#15803D" />
+    <text x="45" y="70" font-family="sans-serif" font-weight="800" font-size="11" fill="#1E3A8A" text-anchor="middle">SALSA PAPOI</text>
+  </g>
+</svg>
