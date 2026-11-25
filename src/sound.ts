@@ -1,9 +1,29 @@
 /**
- * Web Audio API synthesizer for playful Minion and tequeño sound effects
+ * Audio manager for real Minion "Papoi!" audio and Web Audio API sound effects
  */
 class SoundEffects {
   private ctx: AudioContext | null = null;
   private soundEnabled: boolean = true;
+  private papoiAudio: HTMLAudioElement | null = null;
+  private papoiLoadFailed: boolean = false;
+
+  constructor() {
+    this.preloadPapoiAudio();
+  }
+
+  private preloadPapoiAudio(): HTMLAudioElement | null {
+    if (this.papoiLoadFailed || typeof Audio === 'undefined') return null;
+    if (!this.papoiAudio) {
+      const audio = new Audio(`${import.meta.env.BASE_URL}audio/papoi.mp3`);
+      audio.preload = 'auto';
+      audio.volume = 0.85;
+      audio.addEventListener('error', () => {
+        this.papoiLoadFailed = true;
+      });
+      this.papoiAudio = audio;
+    }
+    return this.papoiAudio;
+  }
 
   private initCtx(): AudioContext | null {
     if (!this.soundEnabled) return null;
@@ -21,6 +41,12 @@ class SoundEffects {
 
   public toggleSound(): boolean {
     this.soundEnabled = !this.soundEnabled;
+    if (!this.soundEnabled && this.papoiAudio) {
+      this.papoiAudio.pause();
+      if (this.papoiAudio.readyState > 0) {
+        this.papoiAudio.currentTime = 0;
+      }
+    }
     return this.soundEnabled;
   }
 
@@ -29,9 +55,37 @@ class SoundEffects {
   }
 
   /**
-   * Playful Minion "Papoi!" chirp sound
+   * Real Minion "Papoi!" sound effect (with synthesized fallback)
    */
   public playPapoiChirp(): void {
+    if (!this.soundEnabled) return;
+
+    const audio = this.preloadPapoiAudio();
+    if (audio && !this.papoiLoadFailed) {
+      audio.pause();
+      if (audio.readyState > 0) {
+        audio.currentTime = 0;
+      }
+
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((err: unknown) => {
+          if (err instanceof DOMException && err.name === 'AbortError') return;
+          if (this.soundEnabled) {
+            this.playSynthPapoiChirp();
+          }
+        });
+      }
+      return;
+    }
+
+    this.playSynthPapoiChirp();
+  }
+
+  /**
+   * Synthesized fallback "Papoi!" chirp if audio asset fails to load
+   */
+  private playSynthPapoiChirp(): void {
     const ctx = this.initCtx();
     if (!ctx) return;
 
